@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <section class="vh-100">
+    <section id="signup_section" class="vh-100">
       <div class="container-fluid h-custom">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-md-9 col-lg-6 col-xl-5">
@@ -47,19 +47,19 @@
               <!-- First name and last name input -->
               <div class="input-group mb-3">
                 <div class="form-outline col-md-4">
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                  <input type="text" class="form-control" name="first_name" placeholder="First name" required>
                   <label class="form-label" for="validationCustom01">First name</label>
                 </div>
                 <span class="input-group-text border-0"> </span>
                 <div class="form-outline col-md-4">
-                  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                  <input type="text" class="form-control" name="last_name" placeholder="Last name" required>
                   <label class="form-label" for="validationCustom02">Last name</label>
                 </div>
               </div>
 
               <!-- Password input -->
               <div class="form-outline mb-3">
-                <input type="email" id="emailInput" class="form-control"
+                <input type="email" id="emailInput" name="email" class="form-control"
                   placeholder="Enter a valid email address" />
                 <label class="form-label" for="emailInput">Email address</label>
               </div>
@@ -67,12 +67,12 @@
               <!-- Password and password confirmation -->
               <div class="input-group mb-3">
                 <div class="form-outline col-md-4">
-                  <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                  <input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password" required>
                   <label class="form-label" for="passwordInput">Password</label>
                 </div>
                 <span class="input-group-text border-0"> </span>
                 <div class="form-outline col-md-4">
-                  <input type="password" class="form-control" id="passwordConfirmationInput" placeholder="Password confirmation" required>
+                  <input type="password" class="form-control" id="passwordConfirmationInput" name="passwordConfirmation" placeholder="Password confirmation" required>
                   <label class="form-label" for="passwordConfirmationInput">Password confirmation</label>
                 </div>
               </div>
