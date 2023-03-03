@@ -19,11 +19,14 @@
     <section id="signup_section" class="vh-100">
       <div class="container-fluid h-custom">
         <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-md-9 col-lg-6 col-xl-5">
+          <div class="col-md-8 col-lg-5 col-xl-4">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid"
               alt="Sample image">
           </div>
           <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div class="alert alert-success" id="registrationSuccess" role="alert" style="display:none">
+              Registration was successful. You can log in to your account
+            </div>
             <form id="signup">
               <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                 <p class="lead fw-normal mb-0 me-3">Sign up with</p>
@@ -43,6 +46,8 @@
               <div class="divider d-flex align-items-center my-4">
                 <p class="text-center fw-bold mx-3 mb-0">Or</p>
               </div>
+
+            <div class="alert alert-danger" id="registrationFail" role="alert" style="display:none"></div>
 
               <!-- First name and last name input -->
               <div class="input-group mb-3">
