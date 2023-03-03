@@ -24,7 +24,7 @@
               alt="Sample image">
           </div>
           <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <form>
+            <form id="signup">
               <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                 <p class="lead fw-normal mb-0 me-3">Sign up with</p>
                 <button type="button" class="btn btn-primary btn-floating mx-1">
@@ -80,7 +80,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <!-- Checkbox -->
                 <div class="form-check mb-0">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="tosCheckbox" />
+                  <input class="form-check-input me-2" type="checkbox" value="" id="tosCheckbox" required />
                   <label class="form-check-label" for="tosCheckbox">
                     I agree all statements in <a class="link-primary">Terms of service</a>
                   </label>
@@ -88,10 +88,9 @@
               </div>
 
               <div class="text-center text-lg-start mt-3 pt-2">
-                <button type="button" class="btn btn-primary btn-lg"
+                <button type="submit" class="btn btn-primary btn-lg"
                   style="padding-left: 2.5rem; padding-right: 2.5rem;">Sign up</button>
               </div>
-
             </form>
           </div>
         </div>
@@ -122,7 +121,11 @@
       </div>
     </section>
 
+    <!-- JQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
