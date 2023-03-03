@@ -7,7 +7,7 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
 $logger = new Logger('greensight');
-$logger->pushHandler(new StreamHandler('/greensight/app.log', Level::Debug));
+$logger->pushHandler(new StreamHandler('/greensight/logs/greensight.log', Level::Debug));
 
 $users = [
 	["id" => 0, "first_name" => "Widjan", "last_name" => "Gorton", "email" => "widj.go@arvinmeritor.info"],

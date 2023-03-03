@@ -14,3 +14,4 @@ services:
     build: .
     volumes:
       - ./public:/var/www/html
+      - ./logs:/greensight/logs
