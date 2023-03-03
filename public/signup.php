@@ -1,5 +1,14 @@
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
+use Monolog\Level;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+$logger = new Logger('greensight');
+$logger->pushHandler(new StreamHandler('/greensight/app.log', Level::Debug));
+
 $users = [
 	["id" => 0, "first_name" => "Widjan", "last_name" => "Gorton", "email" => "widj.go@arvinmeritor.info"],
 	["id" => 1, "first_name" => "Lovell", "last_name" => "Blessing", "email" => "lovblessing@careful-organics.org"],
@@ -49,7 +58,7 @@ if (!validatePassword($registration_data["password"], $registration_data["passwo
 $email_column = array_column($users, "email");
 $found_key = array_search($registration_data["email"], $email_column);
 if ($found_key !== false) {
-	// echo "User with email " . $users[$found_key]["email"] . " was found";
+	$logger->info("User with email " . $users[$found_key]["email"] . " was found:", $users[$found_key]);
 	echo json_encode([
 		"status" => "error", "message" => "User with given email already exists"
 	]);
