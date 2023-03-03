@@ -31,7 +31,7 @@ $(function() {
 			}
 		}).fail(function (jqXHR, textStatus, errorThrown) {
 			console.error("The following error occured: " +
-				errorThrown);
+				+ textStatus + ", " + errorThrown);
 		}).always(function() {
 			$inputs.prop("disabled", false);
 		});
