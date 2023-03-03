@@ -1,0 +1,13 @@
+{
+    "name": "eoanermine/greensight",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "3.0.0"
+    },
+    "authors": [
+        {
+            "name": "Danil Sidoruk",
+            "email": "danilsidoruknv@yandex.ru"
+        }
+    ]
+}
